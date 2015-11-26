@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -24,8 +23,11 @@
  */
 defined('MOODLE_INTERNAL') || die;
 
-if ($ADMIN->fulltree) {
-  $settings->add(new admin_setting_configtext('codepostynumber', get_string('codepostynumber', 'message_codeposty'), get_string('configcodepostynumber', 'message_codeposty'), '', PARAM_RAW));
-  $settings->add(new admin_setting_configtext('codepostyusername', get_string('codepostyusername', 'message_codeposty'), get_string('configcodepostyusername', 'message_codeposty'), '', PARAM_RAW));
-  $settings->add(new admin_setting_configpasswordunmask('codepostypassword', get_string('codepostypassword', 'message_codeposty'), get_string('configcodepostypassword', 'message_codeposty'), ''));
+if ($ADMIN->fulltree){
+	$settings->add(new admin_setting_configtext('codepostynumber', get_string('codepostynumber', 'message_codeposty'), 
+		get_string('configcodepostynumber', 'message_codeposty'), '', PARAM_RAW));
+	$settings->add(new admin_setting_configtext('codepostyusername', get_string('codepostyusername', 'message_codeposty'), 
+		get_string('configcodepostyusername', 'message_codeposty'), '', PARAM_RAW));
+	$settings->add(new admin_setting_configpasswordunmask('codepostypassword', get_string('codepostypassword', 'message_codeposty'), 
+		get_string('configcodepostypassword', 'message_codeposty'), ''));
 }
