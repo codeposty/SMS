@@ -24,9 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013110500;        	// The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2013110500;        	// Requires this Moodle version
-$plugin->component = 'message_codeposty';  	// Full name of the plugin (used for diagnostics)
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = 'v2.9-r1'; 			// our first release for moodle 2.9.x branch
-
+$plugin->version = 2013110501; // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires = 2013110500; // Requires this Moodle version.
+$plugin->component = 'message_codeposty'; // Full name of the plugin (used for diagnostics).
+$plugin->maturity = MATURITY_STABLE;
+$plugin->release = 'v2.9-r2'; // Our first release for moodle 2.9.x branch.
